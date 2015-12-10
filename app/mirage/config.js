@@ -12,6 +12,23 @@ export default function() {
   this.put('/api/items/:id');
   this.del('/api/items/:id');
 
+  this.get('/api/generations');
+  this.get('/api/generations/:id');
+  this.post('/api/generations');
+  this.put('/api/generations/:id');
+  this.del('/api/generations/:id');
+
+  this.get('/api/regions');
+  this.get('/api/regions/:id');
+  this.post('/api/regions');
+  this.put('/api/regions/:id');
+  this.del('/api/regions/:id');
+
+  this.get('/api/types');
+  this.get('/api/types/:id');
+  this.post('/api/types');
+  this.put('/api/types/:id');
+  this.del('/api/types/:id');
 
   // These comments are here to help you get started. Feel free to delete them.
 

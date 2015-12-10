@@ -2,3 +2,10 @@
 
 <p>{{#link-to 'pokemon'}} Pokemon You've Seen / Caught{{/link-to}}</p>
 <p>{{#link-to 'items'}} Items You've Collected {{/link-to}}</p>
+
+{{#each model.generations as |generation|}}
+  <p>{{generation.name}}</p>
+  {{#each generation.pokemon as |pokemon|}}
+    <p>{{pokemon.name}}</p>
+  {{/each}}
+{{/each}}
